@@ -1,15 +1,21 @@
 <html>
+<head>
+<script language="javascript">
+setInterval("document.forms[0].submit()",5000);
+</script>
+</head>
 <body>
+<center>
+<h1>Welcome to the world of Node.js</h1>
 
-<h1>My First Heading</h1>
-
-<p>My first paragraph.</p>
-<h2>Output:</h2>
+<p>Here is the demo of the weather station.</p>
+<h2>Current temperature:</h2>
 <pre>
 <span id="temperature output"><!--%OUTPUT%--></span>
 </pre>
 <form action = "/test.js" method="post">
 <input type="submit" value="get temperature">
 </form>
+</center>
 </body>
 </html>
