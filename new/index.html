@@ -2,22 +2,6 @@
 <head>
 <title>Welcome to the World of Node.js</title>
 <!--<link href="style.css" rel="stylesheet" type="text/css" /> -->
-<script type="text/css">
-body {
-	font-size:0.7em;
-	color:#555;
-	font-family: "Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-	background-image:url(img/top.jpg);
-	background-repeat:no-repeat;
-	background-color:#FFF;
-	border-top-color:#FFF;
-	border-top-width:15px;
-}
-#content_right {
-	float:left;
-	width:310px;
-}
-</script>
 <script language="javascript">
 
 
@@ -43,24 +27,22 @@ documents.forms[1].submit();
         </td>
       </tr>
     </table>
-
-<h1>Welcome to the world of Node.js</h1>
-<div id="content_right">
-      <p>Here is the demo of the weather station.</p>
-      <h2>Current temperature:</h2>
+<center>
+<h1> <font color="E55AC7" font-size="100px">Welcome to the world of Node.js</font></h1>
+      <h2><font face="Verdana" color="F70808"  font-size="50px">Current temperature:</font></h2>
       <pre>
-            <span id="temperature output"><!--%OUTPUT%--></span>
+            <span align="center" style="margin-left: 0; margin-top: 1; margin-bottom: 2; margin-right:100"> <font face="Verdana" color="#000080"  font-size="35px"><!--%OUTPUT%--></font></span>
       </pre>
       <form action = "/i2c" method="post">
       </form>
-            <p>Select LED Flashing Mode</p> 
-      <form action = "/led" method="post">
+            <p><b><font face="Verdana" color="F70808"  font-size="50px">Select an LED Flashing Mode</font></b></p> 
+      <form action = "/led" method="post" size="30">
             <input type="radio" name="mode" value="nand-disk" >nand-disk
             <input type="radio" name="mode" value="mmc0" />mmc0
             <input type="radio" name="mode" value="heartbeat" >heartbeat
             <input type="radio" name="mode" value="none" >none
             <input type="submit" value="Select"  onclick="xmlhttpPost()">
       </form>
-</div>
+</center>
 </body>
 </html>
