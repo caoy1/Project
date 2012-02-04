@@ -17,7 +17,6 @@ try {
 
 		var uri = url.parse(request.url).pathname;
 		sys.puts("Got request for " + uri);
-		
 		var exec = require('child_process').exec, child;
 		child = exec('./myi2c',
 	    		function (error, stdout, stderr) {
