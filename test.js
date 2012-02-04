@@ -5,7 +5,7 @@ var url = require('url');
 var path = require('path');
 var tempdata = '';
 var events = require('events');
-var led = require('./led);
+var led = require('./led');
 
 try {
 //	fs.writeFileSync("/sys/class/leds/beagleboard::usr0/trigger", "heartbeat");
