@@ -2,6 +2,9 @@
 <head>
 <script language="javascript">
 setInterval("document.forms[0].submit()",5000);
+function xmlhttpPost() {
+documents.forms[1].submit();
+}
 </script>
 </head>
 <body>
@@ -15,6 +18,12 @@ setInterval("document.forms[0].submit()",5000);
 </pre>
 <form action = "/test.js" method="post">
 <input type="submit" value="get temperature">
+</form>
+<form action = "/led.js" method="post">
+<p class="input">Select LED Flashing Mode <input type="radio" name="nanddisk" value="1" />nanddisk
+<input type="radio" name="mmc0" value="2" />mmc0<input type="radio" name="heartbeat" value="3" />heartbeat
+<input type="radio" name="none" value="4" />none</p>
+<input type="button" value="Select" name="LED" onclick="xmlhttpPost();this.disabled=true"/>
 </form>
 </center>
 </body>
