@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>Welcome to the World of Node.js</title>
+<script language="javascript">
+
+
+setInterval("document.forms[0].submit()",5000);
+
+
+function xmlhttpPost() {
+documents.forms[1].submit();
+}
+</script>
+</head>
+<body>
+<table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-width: 0" bordercolor="#111111" width="100%" id="AutoNumber5" height="100">
+      <tr>
+        <td width="33%" style="border-style: none; border-width: medium" height="70" bgcolor="#FFFF00">
+        <p style="margin-left: 7">
+        <b><font face="Verdana, Arial, Helvetica, sans-serif" size="6" color="#D02090">Node.js</font></b></td>
+        <td width="16%" style="border-style: none; border-width: medium" height="70" bgcolor="#FFFF00">&nbsp;</td>
+        <td width="51%" style="border-style: none; border-width: medium" height="70" bgcolor="#FFFF00">
+        <p align="center" style="margin-top: 0; margin-bottom: 0"><b><i>
+        <font face="Verdana" color="#D02090">'Change your life from today!'</font></i></b><b><i><font face="Verdana" color="#FFFFFF"></font></i></b></p>
+        </td>
+      </tr>
+    </table>
+<center>
+<h1>Welcome to the world of Node.js</h1>
+
+<p>Here is the demo of the weather station.</p>
+<h2>Current temperature:</h2>
+<pre>
+<span id="temperature output"><!--%OUTPUT%--></span>
+</pre>
+<form action = "/i2c" method="post">
+</form>
+<p>Select LED Flashing Mode</p> 
+<form action = "/led" method="post">
+<input type="radio" name="mode" value="nand-disk" >nand-disk
+<input type="radio" name="mode" value="mmc0" />mmc0
+<input type="radio" name="mode" value="heartbeat" >heartbeat
+<input type="radio" name="mode" value="none" >none
+<input type="submit" value="Select"  onclick="xmlhttpPost()">
+</form>
+</center>
+</body>
+</html>
